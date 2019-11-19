@@ -3,30 +3,30 @@
     const seeMoreButtons = document.querySelectorAll('.see-more'),
     popOver = document.querySelector('.popover');
 
-    // const waypoint2 = new Waypoint({
+     const waypoint2 = new Waypoint({
     //     // what element is this waypoint looking at?
     //     // the handler will fire then it scrolls into view
-    //     element: document.getElementById('section2'),
+         element: document.getElementById('beer2'),
     //     // what should we do when we hit the aypoint? this is up to you.
     //     // you can trigger animation, do an Ajax call... whatever
-    //     handler: function(direction) {
-    //       console.log('Scrolled to waypoint 2!')
-    //       this.element.innerHTML += `<p>Added this with Waypoint! We are scrolling ${direction}</p>`;
-    //     }
-    // })
+         handler: function(direction) {
+           console.log('Scrolled to waypoint 2!')
+           this.element.innerHTML += `<p>Added this with Waypoint! We are scrolling ${direction}</p>`;
+         }
+     })
 
-    //const waypoint3 = new Waypoint({
+    const waypoint3 = new Waypoint({
         // what element is this waypoint looking at?
         // the handler will fire then it scrolls into view
-        //element: document.getElementById('section3'),
+        element: document.getElementById('beer3'),
         // what should we do when we hit the aypoint? this is up to you.
         // you can trigger animation, do an Ajax call... whatever
-        //handler: function(direction) {
-          //console.log('Scrolled to waypoint 3!')
-        //},
+        handler: function(direction) {
+          console.log('Scrolled to waypoint 3!')
+        },
 
-        //offset: 200
-    //})
+    offset: 200
+    })
 
     function buildPopover(beerdata, el) {
         popOver.querySelector(".ipa-rating").textContent = `IPA Rating: ${beerdata.IpaRating}`;
